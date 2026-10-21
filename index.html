@@ -1,0 +1,614 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Official website of Angaur State, Republic of Palau: heritage, places to see, governance and visitor information."><meta property="og:title" content="Angaur State Government"><meta property="og:description" content="Discover Angaur, Palau's southernmost island."><meta property="og:image" content="hero-sunset.webp"><link rel="icon" href="favicon.png"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Angaur State Government</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style id="site-css">
+
+:root{
+--bg:#F2F5F1; --surface:#FFFFFF; --band:#E4EDEA; --ink:#0E2235; --muted:#4E5F6B; --line:#CCD8D4;
+--lagoon:#0E7F88; --jungle:#2D6838; --kelau:#D9661A; --kelau-ink:#FFFFFF;
+--hero-a:#0B1B2B; --hero-ink:#F7F3EC; --hero-acc:#F7B57A;
+--display:"Gloock",Georgia,"Times New Roman",serif;
+--body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+--r:14px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--bg:#0A141C; --surface:#11202B; --band:#0F1C26; --ink:#E5EDEF; --muted:#9BAEB8; --line:#22394A;
+--lagoon:#46BFC7; --jungle:#77B582; --kelau:#F08A3C; --kelau-ink:#1A0E05; color-scheme:dark}}
+:root[data-theme="dark"]{
+--bg:#0A141C; --surface:#11202B; --band:#0F1C26; --ink:#E5EDEF; --muted:#9BAEB8; --line:#22394A;
+--lagoon:#46BFC7; --jungle:#77B582; --kelau:#F08A3C; --kelau-ink:#1A0E05; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--hero-a)}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+h3{font-size:1.3rem}
+p{margin:0}
+.pre{white-space:pre-line}
+.eyebrow{font:600 .75rem/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--lagoon)}
+.lead{color:var(--muted);max-width:62ch}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.25rem;border-radius:999px;font:600 .95rem/1 var(--body);text-decoration:none;border:1px solid transparent;cursor:pointer;background:none}
+.btn-primary{background:var(--kelau);color:var(--kelau-ink)}
+.btn-ghost{border-color:var(--line);color:var(--ink)}
+.btn:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--lagoon);outline-offset:2px}
+section{padding-block:clamp(56px,8vw,96px)}
+.band{background:var(--band)}
+.sec-head{display:grid;gap:.75rem;margin-bottom:2rem}
+.more{margin-top:1.75rem;display:flex;gap:.75rem;flex-wrap:wrap}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--hero-a);color:var(--hero-ink)}
+.top .wrap{display:flex;align-items:center;gap:1rem;padding-block:.75rem;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;min-width:0}
+.brand-mark{width:36px;height:36px;flex:none}
+.brand-name{display:block;font-family:var(--display);font-size:1.15rem;line-height:1.1}
+.brand-sub{display:block;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.nav{display:flex;gap:.2rem;margin-left:auto;overflow-x:auto;max-width:100%;scrollbar-width:none;align-items:center}
+.nav::-webkit-scrollbar{display:none}
+.nav a{padding:.45rem .7rem;border-radius:999px;font-size:.9rem;text-decoration:none;white-space:nowrap;opacity:.8}
+.nav a:hover{opacity:1;background:rgba(255,255,255,.08)}
+.nav a[aria-current="page"]{opacity:1;background:rgba(255,255,255,.12)}
+.nav a.nav-cta{background:var(--kelau);color:var(--kelau-ink);opacity:1;font-weight:600}
+@media (max-width:760px){.nav{margin-left:0;width:100%}}
+
+.hero{position:relative;color:var(--hero-ink);background:var(--hero-a);overflow:hidden;min-height:clamp(600px,88vh,880px);display:flex;align-items:flex-end;padding-block:clamp(96px,14vw,160px) clamp(28px,4vw,48px)}
+.hero-scene{position:absolute;inset:0;width:100%;height:100%}
+.hero-photo{position:absolute;inset:0;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:30% 55%;max-width:none;transform:scale(1.06);animation:drift 22s ease-out forwards}
+@keyframes drift{to{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.hero-photo img{animation:none;transform:none}}
+.hero-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,16,28,.78) 0%,rgba(6,16,28,.5) 34%,rgba(6,16,28,.08) 62%,rgba(6,16,28,0) 100%)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,16,28,.45) 0%,rgba(6,16,28,0) 22%,rgba(6,16,28,0) 55%,rgba(6,16,28,.82) 100%)}
+.hero .wrap{position:relative;display:grid;gap:clamp(28px,5vw,56px);width:100%}
+.hero-copy{display:grid;gap:1.15rem;max-width:40rem}
+.hero h1{font-size:clamp(2.8rem,7.6vw,5.6rem);line-height:1.02;letter-spacing:-.01em;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.hero .eyebrow{color:var(--hero-acc);display:flex;align-items:center;gap:.75rem}
+.hero .eyebrow::before{content:"";width:2.25rem;height:1px;background:currentColor;opacity:.8}
+.hero p.lead{color:rgba(247,243,236,.92);font-size:clamp(1.05rem,1.6vw,1.2rem);max-width:34rem;text-shadow:0 1px 16px rgba(0,0,0,.35)}
+.hero .btn-ghost{color:var(--hero-ink);border-color:rgba(247,243,236,.55);backdrop-filter:blur(6px);background:rgba(255,255,255,.06)}
+.hero .btn-primary{box-shadow:0 10px 30px rgba(217,102,26,.35)}
+.hero-credit{position:absolute;right:max(16px,env(safe-area-inset-right,0px));top:clamp(76px,9vw,96px);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,236,.7);z-index:2}
+.hero-actions{display:flex;gap:.75rem;flex-wrap:wrap;align-items:center}
+.enquire{display:grid;grid-template-columns:repeat(5,minmax(0,1fr)) auto;gap:.75rem;align-items:end;background:rgba(8,20,34,.42);border:1px solid rgba(247,243,236,.2);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);border-radius:18px;padding:1.1rem;box-shadow:0 20px 50px rgba(0,0,0,.28)}
+.enquire label{display:grid;gap:.3rem;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(247,243,236,.75);min-width:0}
+.enq-v{display:block;min-height:2.6rem;text-transform:none;letter-spacing:0;width:100%;min-width:0;padding:.6rem .7rem;border-radius:10px;border:1px solid rgba(247,243,236,.22);background:rgba(255,255,255,.08);color:var(--hero-ink);font:500 .95rem var(--body);color-scheme:dark}
+.enquire-msg{grid-column:1/-1;font-size:.95rem}
+@media (max-width:900px){.enquire{grid-template-columns:1fr 1fr}.enquire .btn{grid-column:1/-1;justify-content:center}}
+
+.hero-show{display:block;min-height:0;padding-block:clamp(36px,5vw,64px) clamp(32px,5vw,64px);background:linear-gradient(180deg,#0B1B2B 0%,#10233A 55%,#0B1B2B 100%)}
+.hero-top{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:end}
+.hero-top > *{min-width:0}
+.hero-show h1{font-size:clamp(2.5rem,5.4vw,4.4rem);line-height:1.02;max-width:12ch;text-shadow:none}
+.hero-side{display:grid;gap:1.25rem;padding-bottom:.4rem}
+@media (max-width:860px){.hero-top{grid-template-columns:1fr}}
+.show-wrap{margin-top:clamp(28px,4vw,48px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.showcase{position:relative;max-width:1400px;margin:0 auto;aspect-ratio:3/2;border-radius:22px;overflow:hidden;background:#1a2a3c;box-shadow:0 40px 90px rgba(0,0,0,.45),0 0 0 1px rgba(247,243,236,.08)}
+.showcase img,.showcase video,.showcase canvas{position:absolute;inset:0;width:100%;height:100%;max-width:none;display:block}
+.showcase img,.showcase video{object-fit:cover}
+.showcase canvas{opacity:0;transition:opacity 1.2s ease}
+.showcase canvas.on{opacity:1}
+.show-cap{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:2.5rem 1.25rem 1rem;background:linear-gradient(180deg,rgba(6,16,28,0),rgba(6,16,28,.55));font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(247,243,236,.9);z-index:2}
+.showcase .ph-btns{top:1rem;left:1rem;bottom:auto}
+@media (max-width:640px){.show-wrap{padding-left:0;padding-right:0}.showcase{border-radius:0}.show-cap{font-size:.62rem;padding:1.25rem 16px .6rem}.show-cap span+span{display:none}}
+.hero-show .enquire{position:relative;z-index:3;max-width:1240px;margin:clamp(-56px,-4vw,-28px) auto 0;width:calc(100% - 2*max(16px,env(safe-area-inset-left,0px)))}
+@media (max-width:640px){.hero-show .enquire{margin-top:16px}}
+
+.phero{background:var(--hero-a);color:var(--hero-ink);padding-block:clamp(40px,7vw,80px)}
+.phero .wrap{display:grid;gap:.9rem}
+.phero h1{font-size:clamp(2.2rem,5.5vw,3.8rem);max-width:20ch}
+.phero .eyebrow{color:var(--hero-acc)}
+.phero .lead{color:rgba(247,243,236,.82);font-size:1.08rem}
+.crumb{font-size:.82rem;color:rgba(247,243,236,.65)}
+.crumb a{text-decoration:none}
+.crumb a:hover{text-decoration:underline}
+
+.split{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,5vw,64px);align-items:center}
+.split > *{min-width:0}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+.stats{display:flex;gap:2rem;flex-wrap:wrap;margin-block:1.75rem}
+.stat{display:grid;gap:.15rem;min-width:6rem;align-content:start}
+.stat-v{font:500 1.9rem/1 var(--mono);color:var(--lagoon);font-variant-numeric:tabular-nums}
+.stat-l{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.mosaic{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:.75rem;aspect-ratio:5/4;max-width:100%}
+.mosaic .ph:first-child{grid-row:1/3}
+
+.ph{position:relative;margin:0;border-radius:var(--r);overflow:hidden;min-height:120px;background:var(--band)}
+.ph img,.ph video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;max-width:none}
+.ph-none{background:transparent}
+.ph-lagoon{background:radial-gradient(120% 80% at 30% 70%,#43C6C9 0%,#138C97 40%,#0C4F6B 100%)}
+.ph-lagoon::before{content:"";position:absolute;left:-10%;right:30%;bottom:18%;height:22%;background:#EFE6CF;border-radius:50%;opacity:.9}
+.ph-lagoon::after{content:"";position:absolute;left:35%;right:-10%;bottom:28%;height:40%;background:#2E5B3A;border-radius:60% 40% 0 0}
+.ph-jungle{background:radial-gradient(40% 40% at 25% 30%,#4F8E4A,transparent 70%),radial-gradient(45% 45% at 75% 60%,#3B7A3E,transparent 70%),radial-gradient(35% 35% at 50% 85%,#5DA055,transparent 70%),#1F4A28}
+.ph-flower{background:radial-gradient(circle at 50% 50%,#FFD27A 0 8%,#F08A2A 9% 30%,#C9541A 31% 36%,transparent 37%),radial-gradient(circle at 50% 50%,#2E6B3A,#173D22)}
+.ph-sunset{background:linear-gradient(180deg,#24395A 0%,#C4613A 55%,#F2A65A 62%,#1B4660 63%,#0D2A3D 100%)}
+.ph-stone{background:linear-gradient(160deg,#B9B39F,#857F6C)}
+.ph-reef{background:linear-gradient(170deg,#7FD3D3,#1A7E8C 60%,#0C3F52)}
+.ph-btns{position:absolute;left:.6rem;bottom:.6rem;display:none;gap:.4rem;z-index:3;flex-wrap:wrap}
+body.editing .ph-btns{display:flex}
+.ph-btns button{font:600 .78rem var(--body);padding:.4rem .7rem;border-radius:999px;border:0;background:rgba(10,20,28,.85);color:#fff;cursor:pointer}
+
+.heritage-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:1.25rem}
+.heritage-grid .stat{background:var(--surface);padding:1.4rem}
+@media (max-width:560px){.heritage-grid{grid-template-columns:1fr}}
+.note{display:flex;gap:.6rem;align-items:flex-start;color:var(--muted);font-size:.95rem;margin-bottom:1.5rem}
+.note::before{content:"";flex:none;width:8px;height:8px;margin-top:.55rem;border-radius:50%;background:var(--kelau)}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--r);padding:1.5rem;display:grid;gap:.4rem}
+.empty p{color:var(--muted)}
+
+.legend{background:var(--hero-a);color:var(--hero-ink)}
+.legend .eyebrow{color:var(--hero-acc)}
+.legend-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(24px,5vw,64px)}
+@media (max-width:860px){.legend-body{grid-template-columns:1fr}}
+.legend .sub{font-family:var(--display);font-size:1.4rem;color:var(--hero-acc);margin-top:.5rem}
+.legend p{color:rgba(247,243,236,.86);max-width:62ch}
+.legend .story{display:grid;gap:1rem}
+.moral{border-left:2px solid var(--hero-acc);padding-left:1rem;font-style:italic}
+.legend .museum{font-size:.88rem;color:rgba(247,243,236,.65)}
+.legend .btn-ghost{color:var(--hero-ink);border-color:rgba(247,243,236,.4)}
+
+.flag-art{position:relative;aspect-ratio:23/12;border-radius:6px;overflow:hidden;max-width:100%;box-shadow:0 12px 40px rgba(14,34,53,.18)}
+.flag-art .ph{position:absolute;inset:0;border-radius:0}
+.flag-draw{position:absolute;inset:0}
+.flag-draw svg{width:100%;height:100%;display:block}
+.cap{font-size:.85rem;color:var(--muted);margin-top:.6rem}
+.callouts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1.75rem}
+@media (max-width:520px){.callouts{grid-template-columns:1fr}}
+.callout{border-top:2px solid var(--kelau);padding-top:.6rem;display:grid;gap:.2rem;min-width:0}
+.callout b{font-weight:600}
+.callout span{color:var(--muted);font-size:.93rem}
+
+.hamlets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+@media (max-width:900px){.hamlets{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.hamlets{grid-template-columns:1fr}}
+.hamlet{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.2rem;display:grid;gap:.45rem;align-content:start;min-width:0}
+.hamlet-n{font:500 .85rem var(--mono);color:var(--kelau)}
+.hamlet p{color:var(--muted);font-size:.95rem}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.card .ph{border-radius:0;aspect-ratio:4/3;min-height:0}
+.card-body{padding:1rem 1.1rem 1.2rem;display:grid;gap:.4rem;min-width:0}
+.tag{font:600 .7rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--jungle)}
+.card-body p{color:var(--muted);font-size:.95rem}
+.chips{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1rem}
+.chip{font:600 .82rem var(--body);padding:.45rem .85rem;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.count{font-size:.88rem;color:var(--muted);margin-bottom:1.25rem}
+
+.period{font:500 .85rem var(--mono);color:var(--muted)}
+.governor{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.25rem;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;margin-bottom:2.5rem}
+.governor .ph{width:96px;height:96px;min-height:0;border-radius:50%}
+.governor .role{color:var(--lagoon);font-weight:600;font-size:.92rem;margin-top:.2rem}
+.governor p.bio{color:var(--muted);margin-top:.6rem;max-width:68ch}
+@media (max-width:520px){.governor{grid-template-columns:1fr}}
+.updates{display:grid;border-top:1px solid var(--line)}
+.update{display:grid;grid-template-columns:3.5rem minmax(0,1fr) auto;gap:1rem;padding-block:1.4rem;border-bottom:1px solid var(--line);align-items:start}
+.update-n{font:500 .9rem var(--mono);color:var(--kelau);padding-top:.25rem}
+ul.pts{margin:.5rem 0 0;padding-left:1.1rem;color:var(--muted);display:grid;gap:.25rem}
+.pts-edit{color:var(--muted);margin-top:.5rem;white-space:pre-line}
+.hint{font-size:.78rem;color:var(--lagoon);margin-top:.3rem}
+.visit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+.visit-item{display:grid;gap:.4rem;padding-top:1rem;border-top:3px solid var(--lagoon);min-width:0;align-content:start}
+.visit-item:nth-child(4n+2){border-color:var(--jungle)}
+.visit-item:nth-child(4n+3){border-color:var(--kelau)}
+.visit-item:nth-child(4n){border-color:var(--ink)}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.75rem}
+.gal{display:grid;gap:.4rem;min-width:0;align-content:start}
+.gal .ph{aspect-ratio:4/3;min-height:0}
+.gal-cap{font-size:.88rem;color:var(--muted)}
+
+.details{display:grid;gap:0;border-top:1px solid var(--line);margin-top:1.5rem}
+.detail{display:grid;grid-template-columns:8rem minmax(0,1fr) auto;gap:1rem;padding-block:.9rem;border-bottom:1px solid var(--line);align-items:baseline}
+.detail b{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.detail span{word-break:break-word}
+@media (max-width:520px){.detail{grid-template-columns:1fr}}
+.contact-photo{aspect-ratio:4/3;max-width:100%}
+
+.cta{position:relative;color:#fff;overflow:hidden;background:var(--hero-a)}
+.cta .bg{position:absolute;inset:0;border-radius:0;min-height:0}
+.cta .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,27,43,.88),rgba(11,27,43,.45))}
+.cta .wrap{position:relative;z-index:2}
+.cta .eyebrow{color:var(--hero-acc)}
+.cta h2{max-width:20ch;margin-top:.75rem}
+.cta p.txt{opacity:.9;max-width:60ch;margin-block:1rem 1.5rem}
+.cta .btn-ghost{color:#fff;border-color:rgba(255,255,255,.55)}
+.cta .ph-btns{left:auto;right:max(16px,env(safe-area-inset-right,0px));bottom:1rem}
+footer{background:var(--hero-a);color:rgba(247,243,236,.8);padding-block:3rem 2rem;font-size:.92rem}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:2rem}
+.foot > *{min-width:0}
+@media (max-width:860px){.foot{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot{grid-template-columns:1fr}}
+.foot h4{margin:0 0 .75rem;font:600 .75rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--hero-acc)}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
+.foot a{text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.foot .fname{font-family:var(--display);font-size:1.4rem;color:var(--hero-ink);margin-bottom:.5rem}
+.legal{border-top:1px solid rgba(247,243,236,.15);margin-top:2rem;padding-top:1.25rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.82rem}
+
+.brand-wrap{display:flex;align-items:center;gap:.75rem;min-width:0}
+.hflag{position:relative;margin:0;flex:none;width:62px;aspect-ratio:23/12;border-radius:3px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,.18),0 2px 8px rgba(0,0,0,.35)}
+.hflag::after,.flag-art::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,rgba(255,255,255,.14) 0%,rgba(255,255,255,0) 30%,rgba(0,0,0,.06) 55%,rgba(255,255,255,.08) 75%,rgba(0,0,0,.08) 100%);z-index:1}
+.hflag svg,.hflag img,.hflag video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;max-width:none}
+.flag-strip{height:4px;display:grid;grid-template-columns:repeat(4,1fr)}
+.flag-strip i:nth-child(1){background:#009B57}.flag-strip i:nth-child(2){background:#62CD97}.flag-strip i:nth-child(3){background:#1577D2}.flag-strip i:nth-child(4){background:#001E7E}
+.top .ph-btns{position:static}
+.ed-pages{font:600 .9rem var(--body);padding:.6rem .8rem;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.ph-btns button.on{background:var(--kelau);color:var(--kelau-ink)}
+
+.ed-only{display:none!important}
+body.editing .ed-only{display:inline-flex!important}
+body.editing [data-path]{outline:1px dashed var(--lagoon);outline-offset:3px;border-radius:3px;cursor:text}
+body.editing .hero [data-path],body.editing .phero [data-path],body.editing .legend [data-path],body.editing footer [data-path],body.editing .top [data-path],body.editing .cta [data-path]{outline-color:var(--hero-acc)}
+body.editing [data-path]:focus{outline-style:solid;outline-width:2px}
+body.editing [data-path]:empty::before{content:"Type here";opacity:.45}
+.mini{font:600 .78rem var(--body);padding:.35rem .7rem;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;align-items:center;gap:.3rem}
+.mini.rm{color:#B3261E}
+.add{margin-top:1rem}
+.editbar{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -8px 30px rgba(0,0,0,.12);padding-bottom:env(safe-area-inset-bottom,0px)}
+.editbar .wrap{display:flex;align-items:center;gap:.75rem;padding-block:.75rem;flex-wrap:wrap}
+.editbar .msg{flex:1;min-width:12rem;font-size:.9rem;color:var(--muted)}
+body.editing{padding-bottom:96px}
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(104px + env(safe-area-inset-bottom,0px));z-index:50;background:var(--ink);color:var(--bg);padding:.7rem 1rem;border-radius:10px;font-size:.92rem;max-width:calc(100% - 32px)}
+</style>
+<div id="app"></div>
+<script type="application/json" id="site-data">{"site":{"name":"Angaur State Government","tagline":"DISCOVER. HERITAGE. PARADISE.","about":"Official website of Angaur State, Republic of Palau.","slogan":"Preserving heritage. Building the future.","facebook":"https://www.facebook.com/profile.php?id=61593915684140","enquiryForm":"https://docs.google.com/forms/d/1aKs5vjMQJjZHymmr3PxPI-7Sc6JhSCpOnEX9MhBbfnI/viewform","enquiryLabel":"Send an enquiry","newsletter":"State updates, heritage news and visitor notices are posted on our Facebook page.","copyright":"© 2026 Angaur State Government. All rights reserved."},"img":{"hero":"hero-sunset.webp","aerial":null,"jungle":null,"flower":null,"flag":"angaur-flag.webp","cta":null,"governor":null,"contact":null,"heroWater":true},"home":{"eyebrow":"Angaur State · Republic of Palau","title":"Discover Angaur. Find Your Escape.","text":"Palau's southernmost island. Limestone coast, wartime relics and living tradition, cared for by 114 people.","cta":"Explore now","cta2":"Plan your visit","enquiryNote":"Tap Enquire to send your dates, group size and permit request straight to the Angaur State Government."},"discover":{"eyebrow":"Discover","title":"Discover Angaur: Palau's Southernmost Island","text":"Eight square kilometres of limestone cliffs and turquoise water, where ancient traditions remain largely undisturbed.","introEyebrow":"Discover Angaur","introTitle":"Palau's Southernmost Hidden Paradise","introText":"At the southern tip of Palau's island chain lies Angaur: eight quiet square kilometres of limestone cliffs and turquoise water, with traditions still largely intact. It is one of the last untouched places in the Pacific. The air tastes of salt, the forests hold centuries of history, and every corner has a story.","stats":[{"value":"8 km²","label":"Land area"},{"value":"114","label":"Residents"},{"value":"82°F","label":"Climate"}],"cta":"Explore the island","cap1":"Aerial view of Angaur's turquoise lagoon, white beach and limestone cliffs","cap2":"Dense jungle canopy covering Angaur's interior","cap3":"Close-up of a Ketau flower, Angaur's island blossom","hamletsEyebrow":"Communities","hamletsTitle":"The Four Hamlets of Angaur","hamletsText":"Angaur has four settlements. Each has its own high chief and its own place in the traditional order.","hamlets":[{"region":"Northern Hamlet","name":"Ngebeanged","text":"The densest cluster of heritage sites on the island."},{"region":"Eastern Hamlet","name":"Ngerbelau","text":"An ancient settlement with stone platforms and wells."},{"region":"Central Hamlet","name":"Rois","text":"Home of the German-era phosphate drying plant."},{"region":"Southern Hamlet · State Capital","name":"Ngermasech","text":"Seat of the Angaur State Government."}],"poiTitle":"Island Points of Interest","poiText":"Seventeen places worth the visit: wartime relics, sacred sites and a coastline shaped by the Pacific."},"pois":[{"name":"Buddhist Memorial","category":"Memorial","text":"","img":null},{"name":"Virgin Mary Statue","category":"Memorial","text":"","img":null},{"name":"Blowholes","category":"Natural","text":"","img":null},{"name":"Shinto Shrine","category":"Heritage","text":"","img":null},{"name":"Red Beach","category":"Coastal","text":"","img":null},{"name":"Former US Coast Guard Loran Station","category":"Historic","text":"","img":null},{"name":"Airplane Graveyard","category":"WWII","text":"","img":null},{"name":"Ponds Viewpoint","category":"Natural","text":"","img":null},{"name":"Abandoned Lighthouse","category":"Historic","text":"","img":null},{"name":"Phosphate Plant Ruins","category":"Industrial","text":"","img":null},{"name":"Phosphate Conveyor Belt Ruins","category":"Industrial","text":"","img":null},{"name":"Angaur Harbor","category":"Coastal","text":"","img":null},{"name":"Ngedloch Beach","category":"Coastal","text":"","img":null},{"name":"Bkul a Usas","category":"Natural","text":"","img":null},{"name":"Catholic Church","category":"Heritage","text":"","img":null},{"name":"Banyan Tree","category":"Natural","text":"","img":null},{"name":"Landing Strip","category":"WWII","text":"","img":null}],"heritage":{"eyebrow":"Culture","title":"Heritage & Living Tradition","text":"The Legend of Uab warns that unchecked desire harms the whole community, not only the one who holds it.","legendEyebrow":"Oral Tradition","legendTitle":"The Legend of Uab","legendSub":"The Giant That Fell","p1":"A boy was born on Angaur who seemed ordinary in every way but one: his hunger had no end. As he grew, his greed grew with him, until he outgrew every house and every boundary on the island.","p2":"Afraid for their children and their gardens, the people of Angaur bound him while he slept and set fires around him.","p3":"When the giant fell, his body scattered across the Pacific, and from his remains the islands of Palau were formed.","moral":"Greed does not harm one person alone. It harms the entire community.","museum":"The legend is depicted on the Bai (traditional meeting house) at the Belau National Museum.","more":"Read the full story","flagEyebrow":"Symbol of Unity","flagTitle":"The Angaur State Flag","flagText":"Designed by Leon Gulibert in 2000. Four horizontal stripes of green, light green, blue and dark blue stand for Angaur's four hamlets and their high chiefs: green for the fertile land and forest, blue for the surrounding sea. At the centre blooms the orange Kelau flower, edged in red, representing customs and ceremonies practised only in Angaur. Its eighteen stamens stand for the island's eighteen clans.","flagCaption":"The Angaur State Flag","callouts":[{"label":"Kelau flower","text":"Customs and ceremonies unique to Angaur"},{"label":"18 stamens","text":"The eighteen clans of Angaur"},{"label":"Four stripes","text":"The four hamlets and their high chiefs"},{"label":"Green and blue","text":"Fertile land and forest, and the surrounding sea"}]},"sites":{"eyebrow":"Heritage","title":"Registered Cultural Sites","text":"Sacred ground, stone platforms and phosphate-era ruins: the heritage register of Angaur State.","homeTitle":"Registered Cultural Sites","stats":[{"value":"0","label":"Identified"},{"value":"0","label":"Registered"},{"value":"0","label":"Restored"}],"emptyTitle":"No sites are published right now","emptyText":"The State Government is updating the heritage register. Please check back soon.","cta":"View all cultural sites"},"governance":{"eyebrow":"State Governance","title":"Angaur State Governance","text":"Building a stronger Angaur: the Governor's updates on finance, partnerships, infrastructure and conservation.","sectionTitle":"Building a Stronger Angaur","period":"Governor's updates · August 2026","govName":"Kennosuke A. Suzuky","govRole":"Governor, Angaur State","govBio":"A public servant with deep roots in Angaur who returned home to serve. His focus is financial transparency, sustainable development, international partnerships and developing Angaur's next generation of leaders.","items":[{"title":"Financial Administration","points":"State block grant released\nStandard operating procedures for disbursement finalised\nQuickBooks accounting underway, bringing daily financial reporting into one auditable system"},{"title":"International Partnerships","points":"Engagement with Japan, Australia, Taiwan and India\n$175K secured for the State Boat"},{"title":"Infrastructure & Economy","points":"Regina IV operational\nFish market, store and gas station planned"},{"title":"Conservation & Environment","points":"PAN Fund applications submitted\nGEF and Australia partnerships explored"},{"title":"Education & Youth","points":"Scholarship coordination with Palau Community College and partner nations"},{"title":"Health & Social Services","points":"Community health outreach visits resumed\nMedical supply chain improvements"},{"title":"Cultural Preservation","points":"Heritage site documentation continues\nOral history recording project launched"}],"cta":"All State updates"},"visit":{"eyebrow":"VISITOR INFO","title":"Plan Your Visit","text":"How to get to Angaur, the permits you need, visitor guidelines and emergency procedures.","sectionTitle":"Before You Arrive","items":[{"title":"Getting Here","points":"Daily flights from Airai Airport on single-engine aircraft\nRegina IV charter boat service available\n6,600 ft airstrip, originally built by the Japanese"},{"title":"Permits & Fees","points":"A permit fee is required for site visits\nPhotography and video filming need a separate permit\nArrange permits through the Angaur State Government"},{"title":"Visitor Guidelines","points":"Take home everything you bring\nDo not remove anything from historical sites\nRespect culturally sensitive areas at all times\nLearn the evacuation routes"},{"title":"Safety & Emergency","points":"Designated evacuation centres for tsunamis, typhoons and flooding\nLearn your nearest evacuation route before exploring\nFollow official instructions during severe weather warnings"}],"cta":"Plan your visit"},"gallery":{"eyebrow":"Gallery","title":"The Island in Pictures","text":"Marine life, landscapes, night skies and heritage from across Angaur.","sectionEyebrow":"Visual Journey","sectionTitle":"Glimpses of Paradise","note":"No photographs yet. The gallery is being updated, so please check back soon.","cta":"Open the gallery","items":[]},"contact":{"eyebrow":"Get in Touch","title":"Contact Angaur State","text":"Permits, filming arrangements and general visiting enquiries go first to the State Government office.","sectionEyebrow":"Connect","sectionTitle":"Reach Out to Angaur State","notice":"Contact details are being updated. Please check back soon.","details":[{"label":"Office","value":"Angaur State Government, Ngermasech, Angaur, Republic of Palau"},{"label":"Phone","value":"Add phone number"},{"label":"Email","value":"Add email address"}]},"cta":{"eyebrow":"READY WHEN YOU ARE","title":"Plan Your Journey to Anguar","text":"Contact the Angaur State Government to arrange your visit.","btn1":"Contact Us","btn2":"Follow on Facebook"},"nav":{"home":"Home","discover":"Discover","heritage":"Heritage","sites":"Sites","governance":"Governance","gallery":"Gallery","contact":"Contact","visit":"Plan Your Visit"},"labels":{"placesEyebrow":"Points of interest","placesTitle":"Places to See","placesMore":"See all points of interest","flagMore":"About the flag","footExplore":"Explore","footContact":"Contact","footNews":"Newsletter","footFollow":"Follow for updates","footFacebook":"Facebook","country":"Republic of Palau","fbMessage":"Message us on Facebook","capLeft":"Sunset over the coast of Angaur","capRight":"Ngeaur · 6°54′N 134°08′E","enquire":"Enquire","enqDest":"Destination","enqDestVal":"Angaur, Palau","enqIn":"Arrival","enqInVal":"Your dates","enqOut":"Departure","enqOutVal":"Your dates","enqGuests":"Guests","enqGuestsVal":"Group size","enqPermit":"Permit","enqPermitVal":"State assistance","formLink":"Enquiry form link:","fbLink":"Facebook:"}}</script>
+<script id="site-js">
+(function(){
+var TITLE = "Angaur State Government";
+var FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">';
+var RESET = ':root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,sans-serif}img{max-width:100%}[hidden]{display:none!important}';
+var PAGES = [["home","Home"],["discover","Discover"],["heritage","Heritage"],["sites","Sites"],["governance","Governance"],["gallery","Gallery"],["contact","Contact"]];
+var TEMPLATES = {
+"discover.stats": {value:"0", label:"Label"},
+"sites.stats": {value:"0", label:"Label"},
+"discover.hamlets": {region:"Hamlet", name:"Name", text:"Description."},
+"pois": {name:"New place", category:"Natural", text:"", img:null},
+"heritage.callouts": {label:"Label", text:"Meaning"},
+"governance.items": {title:"New update", points:"First point\nSecond point"},
+"visit.items": {title:"New topic", points:"First point\nSecond point"},
+"gallery.items": {caption:"Photo caption", img:null},
+"contact.details": {label:"Label", value:"Value"}
+};
+var state = JSON.parse(document.getElementById("site-data").textContent);
+var CSS = document.getElementById("site-css").textContent;
+var JS = document.getElementById("site-js").textContent;
+var app = document.getElementById("app");
+var page = "home", poiFilter = "All";
+var editing = false, snapshot = null, artifactNS = null, assetsNS = null, readOnly = false, saving = false;
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+function get(path){return path.split(".").reduce(function(o,k){return o==null?o:o[k]}, state)}
+function set(path,val){var ks=path.split("."),o=state;for(var i=0;i<ks.length-1;i++){o=o[ks[i]]}o[ks[ks.length-1]]=val}
+function t(path,tag,cls){tag=tag||"span";return "<"+tag+(cls?' class="'+cls+'"':"")+' data-path="'+path+'">'+esc(get(path))+"</"+tag+">"}
+function safeUrl(u){u=String(u||"").trim();return /^https:\/\//i.test(u)?u:"#contact"}
+function fb(){return esc(safeUrl(state.site.facebook))}
+function link(to,inner,cls){return '<a href="#'+to+'" data-route="'+to+'"'+(cls?' class="'+cls+'"':"")+">"+inner+"</a>"}
+function isVid(u){return /^video:/.test(String(u||""))}
+function media(url,alt,cls){
+if(!url) return "";
+if(isVid(url)) return '<video'+(cls?' class="'+cls+'"':"")+' src="'+esc(String(url).slice(6))+'" autoplay muted loop playsinline preload="metadata" aria-label="'+esc(alt||"")+'"></video>';
+return '<img'+(cls?' class="'+cls+'"':"")+' src="'+esc(url)+'" alt="'+esc(alt||"")+'" loading="lazy">';
+}
+function mediaBtns(path){
+var url=get(path);
+return '<span class="ph-btns"><button type="button" data-change="'+path+'">'+(url?"Change photo or video":"Add photo or video")+'</button>'+
+(url?'<button type="button" data-clear="'+path+'">Remove</button>':"")+"</span>";
+}
+function photo(path,scene,alt,extra){
+return '<figure class="ph ph-'+scene+(extra?" "+extra:"")+'">'+media(get(path),alt)+mediaBtns(path)+"</figure>";
+}
+function rm(path){return '<button type="button" class="mini rm ed-only" data-remove="'+path+'">Remove</button>'}
+function add(path,label){return '<button type="button" class="mini add ed-only" data-add="'+path+'">+ '+label+"</button>"}
+function points(path){
+if(editing) return t(path,"p","pts-edit")+'<p class="hint">One point per line</p>';
+return '<ul class="pts">'+String(get(path)||"").split("\n").filter(function(s){return s.trim()}).map(function(s){return "<li>"+esc(s)+"</li>"}).join("")+"</ul>";
+}
+function flagSVG(){
+var st="",pe="";
+for(var i=0;i<18;i++){var a=i*Math.PI*2/18,x1=150+Math.cos(a)*9,y1=100+Math.sin(a)*9,x2=150+Math.cos(a)*25,y2=100+Math.sin(a)*25;
+st+='<line x1="'+x1.toFixed(1)+'" y1="'+y1.toFixed(1)+'" x2="'+x2.toFixed(1)+'" y2="'+y2.toFixed(1)+'"/><circle cx="'+x2.toFixed(1)+'" cy="'+y2.toFixed(1)+'" r="2.1"/>'}
+for(var j=0;j<6;j++){pe+='<path transform="rotate('+(j*60+15)+' 150 100)" d="M150 100 C 128 80, 126 50, 142 44 C 147 49, 153 49, 158 44 C 174 50, 172 80, 150 100 Z"/>'}
+return '<svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Flag of Angaur State"><rect width="300" height="50" fill="#009B57"/><rect y="50" width="300" height="50" fill="#62CD97"/><rect y="100" width="300" height="50" fill="#1577D2"/><rect y="150" width="300" height="50" fill="#001E7E"/>'+
+'<g fill="#F07A1A" stroke="#C4520F" stroke-width="1.6" stroke-linejoin="round">'+pe+'</g><circle cx="150" cy="100" r="15" fill="#F5A23A"/><circle cx="150" cy="100" r="8" fill="#FFD24D"/>'+
+'<g stroke="#111" stroke-width="1.3" fill="#111">'+st+'</g></svg>';
+}
+function flagArt(){ var u=state.img.flag; return u?media(u,"Flag of Angaur State"):flagSVG(); }
+function flower(n,cls){
+var g="";for(var i=0;i<n;i++){g+='<ellipse cx="50" cy="24" rx="9" ry="22" transform="rotate('+(i*360/n)+' 50 50)"/>'}
+return '<svg class="'+(cls||"")+'" viewBox="0 0 100 100" aria-hidden="true"><g fill="#F08A2A">'+g+'</g><circle cx="50" cy="50" r="11" fill="#FFD27A"/></svg>';
+}
+function navLabel(k){return (state.nav&&state.nav[k])||k}
+function header(){
+return '<header class="top"><div class="flag-strip" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="wrap"><div class="brand-wrap">'+
+'<figure class="hflag">'+flagArt()+'</figure>'+
+link("home",'<span>'+t("site.name","span","brand-name")+t("site.tagline","span","brand-sub")+'</span>',"brand")+
+'<span class="ph-btns"><button type="button" data-change="img.flag">'+(state.img.flag?"Change flag":"Upload official flag")+'</button>'+(state.img.flag?'<button type="button" data-clear="img.flag">Use drawn flag</button>':"")+'</span></div>'+
+'<nav class="nav" aria-label="Main">'+PAGES.map(function(p){return '<a href="#'+p[0]+'" data-route="'+p[0]+'"'+(page===p[0]?' aria-current="page"':"")+">"+t("nav."+p[0])+"</a>"}).join("")+
+'<a href="#visit" data-route="visit" class="nav-cta"'+(page==="visit"?' aria-current="page"':"")+'>'+t("nav.visit")+'</a></nav></div></header>';
+}
+function heroScene(){
+return '<svg class="hero-scene" viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs>'+
+'<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1B2B"/><stop offset=".45" stop-color="#2A3E62"/><stop offset=".72" stop-color="#C2603A"/><stop offset=".8" stop-color="#F2A65A"/></linearGradient>'+
+'<linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1F4C66"/><stop offset="1" stop-color="#0B1B2B"/></linearGradient></defs>'+
+'<rect width="1200" height="640" fill="url(#sky)"/><circle cx="880" cy="500" r="70" fill="#FFC77E" opacity=".9"/>'+
+'<rect y="500" width="1200" height="140" fill="url(#sea)"/>'+
+'<g stroke="#F7B57A" stroke-opacity=".45" stroke-width="2"><line x1="800" y1="520" x2="960" y2="520"/><line x1="830" y1="540" x2="930" y2="540"/><line x1="850" y1="562" x2="910" y2="562"/></g>'+
+'<path d="M560 500 L600 470 Q640 455 700 462 L760 470 Q800 474 830 488 L860 500 Z" fill="#0E1E2C"/>'+
+'<path d="M0 500 L0 410 Q60 380 140 392 L210 400 Q260 380 300 405 L330 440 Q360 470 420 482 L480 500 Z" fill="#0A1622"/>'+
+'<g stroke="#0A1622" stroke-width="5" fill="none" stroke-linecap="round"><path d="M180 396 Q190 340 176 300"/><path d="M250 392 Q262 330 280 296"/></g>'+
+'<g fill="#0A1622"><path d="M176 300 q-40 -6 -64 14 q36 -4 64 -14z M176 300 q36 -18 66 -6 q-36 2 -66 6z M176 300 q-14 -30 -46 -40 q22 20 46 40z M176 300 q16 -32 50 -36 q-28 16 -50 36z"/>'+
+'<path d="M280 296 q-40 -6 -64 14 q36 -4 64 -14z M280 296 q36 -18 66 -6 q-36 2 -66 6z M280 296 q-14 -30 -46 -40 q22 20 46 40z M280 296 q16 -32 50 -36 q-28 16 -50 36z"/></g></svg>';
+}
+function pageHero(key,label){
+return '<section class="phero"><div class="wrap"><p class="crumb">'+link("home","Home")+' / '+label+'</p>'+t(key+".eyebrow","p","eyebrow")+t(key+".title","h1")+t(key+".text","p","lead pre")+'</div></section>';
+}
+/* ---------- shared sections ---------- */
+function discoverIntro(withCta){
+return '<section id="discover-intro"><div class="wrap split"><div>'+
+'<div class="sec-head">'+t("discover.introEyebrow","p","eyebrow")+t("discover.introTitle","h2")+'</div>'+t("discover.introText","p","lead pre")+
+'<div class="stats">'+get("discover.stats").map(function(s,i){var p="discover.stats."+i;return '<div class="stat">'+t(p+".value","span","stat-v")+t(p+".label","span","stat-l")+rm(p)+"</div>"}).join("")+add("discover.stats","Add figure")+'</div>'+
+(withCta?link("discover",t("discover.cta"),"btn btn-ghost"):"")+'</div>'+
+'<div class="mosaic">'+photo("img.aerial","lagoon",state.discover.cap1)+photo("img.jungle","jungle",state.discover.cap2)+photo("img.flower","flower",state.discover.cap3)+'</div></div></section>';
+}
+function siteStats(){
+return '<div class="heritage-grid">'+state.sites.stats.map(function(s,i){var p="sites.stats."+i;return '<div class="stat">'+t(p+".value","span","stat-v")+t(p+".label","span","stat-l")+rm(p)+"</div>"}).join("")+'</div>'+add("sites.stats","Add figure");
+}
+function legendSection(full){
+return '<section class="legend" id="legend"><div class="wrap legend-body"><div>'+t("heritage.legendEyebrow","p","eyebrow")+'<div style="height:.75rem"></div>'+t("heritage.legendTitle","h2")+t("heritage.legendSub","p","sub")+'</div>'+
+'<div class="story">'+t("heritage.p1","p","pre")+(full?t("heritage.p2","p","pre")+t("heritage.p3","p","pre"):"")+t("heritage.moral","p","moral pre")+
+(full?t("heritage.museum","p","museum pre"):'<div>'+link("heritage",t("heritage.more"),"btn btn-ghost")+'</div>')+'</div></div></section>';
+}
+function flagSection(full){
+var url=state.img.flag;
+return '<section id="flag"'+(full?"":' class="band"')+'><div class="wrap split"><div><div class="flag-art">'+
+(url?"":'<div class="flag-draw">'+flagSVG()+'</div>')+
+photo("img.flag","none",state.heritage.flagCaption)+'</div>'+t("heritage.flagCaption","p","cap")+'</div>'+
+'<div><div class="sec-head">'+t("heritage.flagEyebrow","p","eyebrow")+t("heritage.flagTitle","h2")+'</div>'+t("heritage.flagText","p","lead pre")+
+(full?'<div class="callouts">'+state.heritage.callouts.map(function(c,i){var p="heritage.callouts."+i;return '<div class="callout">'+t(p+".label","b")+t(p+".text","span")+'<div>'+rm(p)+'</div></div>'}).join("")+'</div>'+add("heritage.callouts","Add meaning")
+:'<div class="more">'+link("heritage",t("labels.flagMore"),"btn btn-ghost")+'</div>')+
+'</div></div></section>';
+}
+var scenes=["stone","sunset","reef","jungle","lagoon","flower"];
+function poiCard(i){
+var p="pois."+i, it=state.pois[i];
+return '<article class="card">'+photo(p+".img",scenes[i%scenes.length],it.name)+
+'<div class="card-body">'+t(p+".category","span","tag")+t(p+".name","h3")+((it.text||editing)?t(p+".text","p","pre"):"")+'<div>'+rm(p)+'</div></div></article>';
+}
+function govList(limit){
+var items=state.governance.items, n=limit?Math.min(limit,items.length):items.length, out="";
+for(var i=0;i<n;i++){var p="governance.items."+i;var k=i+1;
+out+='<div class="update"><span class="update-n">'+(k<10?"0"+k:k)+'</span><div>'+t(p+".title","h3")+points(p+".points")+'</div>'+rm(p)+'</div>'}
+return '<div class="updates">'+out+'</div>';
+}
+function visitGrid(home){
+var items=state.visit.items, idx=[];
+if(home){ if(items.length<=3){for(var j=0;j<items.length;j++)idx.push(j)} else {idx=[0,1,items.length-1]} }
+else { for(var k=0;k<items.length;k++) idx.push(k) }
+return '<div class="visit-grid">'+idx.map(function(i){var p="visit.items."+i;return '<div class="visit-item">'+t(p+".title","h3")+points(p+".points")+'<div>'+rm(p)+'</div></div>'}).join("")+'</div>';
+}
+function galleryGrid(){
+var gs=["sunset","stone","reef","lagoon","jungle","flower"], items=state.gallery.items;
+return (items.length?'':'<p class="note">'+t("gallery.note")+'</p>')+
+'<div class="gallery">'+items.map(function(it,i){var p="gallery.items."+i;return '<div class="gal">'+photo(p+".img",gs[i%gs.length],it.caption)+t(p+".caption","span","gal-cap")+'<div>'+rm(p)+'</div></div>'}).join("")+'</div>'+
+add("gallery.items","Add photo");
+}
+function cta(){
+return '<section class="cta" id="cta">'+photo("img.cta","sunset","Pacific island sunset with silhouetted palm trees","bg")+'<div class="wrap">'+
+t("cta.eyebrow","p","eyebrow")+t("cta.title","h2")+t("cta.text","p","txt pre")+
+'<div class="hero-actions">'+link("contact",t("cta.btn1"),"btn btn-primary")+'<a class="btn btn-ghost" href="'+fb()+'" target="_blank" rel="noopener">'+t("cta.btn2")+'</a></div></div></section>';
+}
+function footer(){
+return '<footer><div class="wrap"><div class="foot"><div><p class="fname">'+esc(state.site.name)+'</p>'+t("site.about","p")+'<p style="margin-top:.5rem;color:var(--hero-acc)">'+t("site.slogan")+'</p><p style="margin-top:.75rem"><a href="'+fb()+'" target="_blank" rel="noopener">'+t("labels.footFacebook")+'</a></p></div>'+
+'<div>'+t("labels.footExplore","h4")+'<ul>'+PAGES.map(function(p){return "<li>"+link(p[0],esc(navLabel(p[0])))+"</li>"}).join("")+'</ul></div>'+
+'<div>'+t("labels.footContact","h4")+'<ul>'+state.contact.details.map(function(d){return '<li>'+esc(d.value)+'</li>'}).join("")+'</ul></div>'+
+'<div>'+t("labels.footNews","h4")+t("site.newsletter","p")+'<p style="margin-top:.75rem"><a class="btn btn-ghost" style="color:var(--hero-ink);border-color:rgba(247,243,236,.35)" href="'+fb()+'" target="_blank" rel="noopener">'+t("labels.footFollow")+'</a></p></div></div>'+
+'<div class="legal">'+t("site.copyright")+t("labels.country")+'</div></div></footer>';
+}
+/* ---------- pages ---------- */
+function pHome(){
+var url=state.img.hero, s="";
+var enq='<div class="enquire" aria-label="Visit enquiry">'+
+[["enqDest","enqDestVal"],["enqIn","enqInVal"],["enqOut","enqOutVal"],["enqGuests","enqGuestsVal"],["enqPermit","enqPermitVal"]].map(function(f){return '<label>'+t("labels."+f[0],"span")+t("labels."+f[1],"span","enq-v")+'</label>'}).join("")+
+'<a class="btn btn-primary" href="'+esc(safeUrl(state.site.enquiryForm))+'" target="_blank" rel="noopener">'+t("labels.enquire")+'</a>'+
+'<p class="enquire-msg">'+t("home.enquiryNote")+'</p></div>';
+var acts='<div class="hero-actions">'+link("discover",t("home.cta"),"btn btn-primary")+link("visit",t("home.cta2"),"btn btn-ghost")+'</div>';
+var heroVid=isVid(url), waterOn=!heroVid&&state.img.heroWater!==false;
+var photoBtns='<span class="ph-btns"><button type="button" data-change="img.hero">'+(url?"Change photo or video":"Add photo or video")+'</button>'+(url?'<button type="button" data-clear="img.hero">Remove</button>':"")+
+(url&&!heroVid?'<button type="button" data-toggle="img.heroWater" class="'+(waterOn?"on":"")+'">Moving water: '+(waterOn?"On":"Off")+'</button>':"")+'</span>';
+if(url){
+s+='<section class="hero hero-show" id="home-hero"><div class="wrap hero-top"><div class="hero-copy">'+t("home.eyebrow","p","eyebrow")+t("home.title","h1")+'</div>'+
+'<div class="hero-side">'+t("home.text","p","lead pre")+acts+'</div></div>'+
+'<div class="show-wrap"><figure class="showcase" style="margin:0 auto">'+media(url,"Sunset over the tropical coastline of Angaur","show-img")+
+(waterOn?'<canvas class="water" aria-hidden="true"></canvas>':'')+
+'<figcaption class="show-cap">'+t("labels.capLeft")+t("labels.capRight")+'</figcaption>'+photoBtns+'</figure></div>'+
+'<div class="wrap" style="padding-left:0;padding-right:0">'+enq+'</div></section>';
+} else {
+s+='<section class="hero" id="home-hero">'+heroScene()+'<div class="wrap"><div class="hero-copy">'+t("home.eyebrow","p","eyebrow")+t("home.title","h1")+t("home.text","p","lead pre")+
+'<div class="hero-actions">'+link("discover",t("home.cta"),"btn btn-primary")+link("visit",t("home.cta2"),"btn btn-ghost")+'<span class="ph-btns" style="position:static"><button type="button" data-change="img.hero">Add photo</button></span></div></div>'+enq+'</div></section>';
+}
+s+=discoverIntro(true);
+s+='<section class="band" id="home-sites"><div class="wrap"><div class="sec-head">'+t("sites.eyebrow","p","eyebrow")+t("sites.homeTitle","h2")+'</div>'+siteStats()+
+'<p class="note">'+t("sites.emptyText")+'</p>'+link("sites",t("sites.cta"),"btn btn-ghost")+'</div></section>';
+s+=legendSection(false);
+s+=flagSection(false);
+s+='<section id="home-places"><div class="wrap"><div class="sec-head">'+t("labels.placesEyebrow","p","eyebrow")+t("labels.placesTitle","h2")+'</div><div class="cards">';
+for(var i=0;i<Math.min(4,state.pois.length);i++) s+=poiCard(i);
+s+='</div><div class="more">'+link("discover",t("labels.placesMore"),"btn btn-ghost")+'</div></div></section>';
+s+='<section class="band" id="home-gov"><div class="wrap"><div class="sec-head">'+t("governance.eyebrow","p","eyebrow")+t("governance.sectionTitle","h2")+t("governance.period","p","period")+'</div>'+govList(3)+
+'<div class="more">'+link("governance",t("governance.cta"),"btn btn-ghost")+'</div></div></section>';
+s+='<section id="home-visit"><div class="wrap"><div class="sec-head">'+t("visit.eyebrow","p","eyebrow")+t("visit.sectionTitle","h2")+'</div>'+visitGrid(true)+
+'<div class="more">'+link("visit",t("visit.cta"),"btn btn-primary")+'</div></div></section>';
+s+='<section class="band" id="home-gallery"><div class="wrap"><div class="sec-head">'+t("gallery.sectionEyebrow","p","eyebrow")+t("gallery.sectionTitle","h2")+'</div>'+galleryGrid()+
+'<div class="more">'+link("gallery",t("gallery.cta"),"btn btn-ghost")+'</div></div></section>';
+return s;
+}
+function pDiscover(){
+var cats=["All"];state.pois.forEach(function(p){if(cats.indexOf(p.category)<0)cats.push(p.category)});
+if(cats.indexOf(poiFilter)<0) poiFilter="All";
+var shown=[];state.pois.forEach(function(p,i){if(editing||poiFilter==="All"||p.category===poiFilter)shown.push(i)});
+return pageHero("discover","Discover")+discoverIntro(false)+
+'<section class="band" id="hamlets"><div class="wrap"><div class="sec-head">'+t("discover.hamletsEyebrow","p","eyebrow")+t("discover.hamletsTitle","h2")+t("discover.hamletsText","p","lead pre")+'</div>'+
+'<div class="hamlets">'+state.discover.hamlets.map(function(h,i){var p="discover.hamlets."+i;var k=i+1;return '<div class="hamlet"><span class="hamlet-n">'+(k<10?"0"+k:k)+' · '+t(p+".region")+'</span>'+t(p+".name","h3")+t(p+".text","p","pre")+'<div>'+rm(p)+'</div></div>'}).join("")+'</div>'+
+add("discover.hamlets","Add hamlet")+'</div></section>'+
+'<section id="pois"><div class="wrap"><div class="sec-head">'+t("discover.poiTitle","h2")+t("discover.poiText","p","lead pre")+'</div>'+
+(editing?'':'<div class="chips" role="group" aria-label="Filter by category">'+cats.map(function(c){return '<button type="button" class="chip" data-filter="'+esc(c)+'" aria-pressed="'+(c===poiFilter)+'">'+esc(c)+'</button>'}).join("")+'</div>')+
+'<p class="count">Showing '+shown.length+' of '+state.pois.length+' points of interest</p>'+
+'<div class="cards">'+shown.map(poiCard).join("")+'</div>'+add("pois","Add place")+'</div></section>';
+}
+function pHeritage(){ return pageHero("heritage","Heritage")+legendSection(true)+flagSection(true); }
+function pSites(){
+return pageHero("sites","Sites")+'<section><div class="wrap">'+siteStats()+
+'<div class="empty" style="margin-top:1rem">'+t("sites.emptyTitle","h3")+t("sites.emptyText","p","pre")+'</div></div></section>';
+}
+function pGovernance(){
+return pageHero("governance","Governance")+'<section><div class="wrap">'+
+'<div class="governor">'+photo("img.governor","stone","Governor of Angaur State")+'<div>'+t("governance.govName","h3")+t("governance.govRole","p","role")+t("governance.govBio","p","bio pre")+'</div></div>'+
+'<div class="sec-head">'+t("governance.sectionTitle","h2")+t("governance.period","p","period")+'</div>'+govList(0)+add("governance.items","Add update")+'</div></section>';
+}
+function pVisit(){
+return pageHero("visit","Plan Your Visit")+'<section><div class="wrap"><div class="sec-head">'+t("visit.sectionTitle","h2")+'</div>'+visitGrid(false)+add("visit.items","Add topic")+'</div></section>';
+}
+function pGallery(){
+return pageHero("gallery","Gallery")+'<section><div class="wrap"><div class="sec-head">'+t("gallery.sectionEyebrow","p","eyebrow")+t("gallery.sectionTitle","h2")+'</div>'+galleryGrid()+'</div></section>';
+}
+function pContact(){
+return pageHero("contact","Contact")+'<section><div class="wrap split"><div>'+
+'<div class="sec-head">'+t("contact.sectionEyebrow","p","eyebrow")+t("contact.sectionTitle","h2")+'</div>'+t("contact.text","p","lead pre")+
+'<p class="note" style="margin-top:1.25rem">'+t("contact.notice")+'</p>'+
+'<div class="details">'+state.contact.details.map(function(d,i){var p="contact.details."+i;return '<div class="detail">'+t(p+".label","b")+t(p+".value")+rm(p)+'</div>'}).join("")+'</div>'+add("contact.details","Add detail")+
+'<div class="more"><a class="btn btn-primary" href="'+esc(safeUrl(state.site.enquiryForm))+'" target="_blank" rel="noopener">'+t("site.enquiryLabel")+'</a><a class="btn btn-ghost" href="'+fb()+'" target="_blank" rel="noopener">'+t("labels.fbMessage")+'</a></div>'+
+'<p class="cap" style="word-break:break-all">'+t("labels.formLink")+' '+t("site.enquiryForm")+'</p>'+
+'<p class="cap" style="word-break:break-all">'+t("labels.fbLink")+' '+t("site.facebook")+'</p></div>'+
+'<div>'+photo("img.contact","sunset","Pacific island sunset with silhouetted palm trees","contact-photo")+'</div></div></section>';
+}
+/* ---------- live water on the home photo ---------- */
+var water={raf:0,canvas:null,io:null,ro:null,visible:true};
+function stopWater(){ if(water.raf) cancelAnimationFrame(water.raf); water.raf=0; if(water.io) water.io.disconnect(); if(water.ro) water.ro.disconnect(); water.io=water.ro=null; water.canvas=null; }
+var VS="attribute vec2 a;varying vec2 v;void main(){v=vec2(a.x*.5+.5,.5-a.y*.5);gl_Position=vec4(a,0.,1.);}";
+var FS=[
+"precision highp float;uniform sampler2D u_img;uniform float u_t;varying vec2 v;",
+"float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}",
+"float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1.,0.)),f.x),mix(h(i+vec2(0.,1.)),h(i+vec2(1.,1.)),f.x),f.y);}",
+"float shore(float y){return .15+(y-.70)*.73;}",
+"float wm(vec2 uv){",
+" float top=mix(.566,.612,smoothstep(.405,.385,uv.x));",
+" top=mix(top,.695,smoothstep(.205,.185,uv.x));",
+" float m=smoothstep(top,top+.01,uv.y);",
+" float e=shore(uv.y);",
+" m*=smoothstep(e,e+.025,uv.x);",
+" return m;}",
+"void main(){",
+" vec2 uv=v;float t=u_t;",
+" float m=wm(uv);",
+" float d=clamp((uv.y-.56)/.44,0.,1.);",
+" float amp=(.0005+.0034*d*d)*m;",
+" float fq=mix(170.,36.,d);",
+" float w1=sin(uv.y*fq+t*1.5+n(uv*vec2(5.,28.)+t*.12)*6.2832);",
+" float w2=sin(uv.y*fq*1.73-t*1.05+uv.x*14.+n(uv*vec2(9.,40.)-t*.1)*3.);",
+" vec2 off=vec2(.35*w2,w1)*amp;",
+" float sky=smoothstep(.43,.48,uv.x)*(1.-smoothstep(.5,.552,uv.y));",
+" off+=vec2(n(uv*vec2(3.,5.)+vec2(t*.03,0.))-.5,n(uv*vec2(4.,3.)-vec2(0.,t*.02))-.5)*.0045*sky;",
+" vec4 c=texture2D(u_img,clamp(uv+off,0.,1.));",
+" c.rgb*=1.+.035*w1*m*d;",
+" float sun=exp(-pow((uv.x-.93)/.085,2.))*smoothstep(.565,.6,uv.y)*(1.-smoothstep(.62,.98,uv.y));",
+" float g=pow(n(vec2(uv.x*230.,uv.y*950.-t*2.2)),16.);",
+" c.rgb+=g*sun*m*vec3(1.,.88,.62)*1.4;",
+" float g2=pow(n(vec2(uv.x*420.+t*.35,uv.y*1500.-t*3.)),24.)*m*d;",
+" c.rgb+=g2*vec3(1.,.97,.9)*.55;",
+" float e=shore(uv.y);",
+" float lap=.006+.006*sin(t*.9+uv.y*30.);",
+" float foam=(1.-smoothstep(0.,.006,abs(uv.x-e-lap)))*smoothstep(.69,.73,uv.y);",
+" foam*=.55+.45*n(vec2(uv.y*120.,t*.6));",
+" c.rgb=mix(c.rgb,vec3(1.,.98,.95),foam*.32);",
+" gl_FragColor=vec4(c.rgb,1.);}"
+].join("\n");
+function initWater(){
+var c=app.querySelector("canvas.water");
+if(!c){ stopWater(); return }
+if(c===water.canvas) return;
+stopWater(); water.canvas=c;
+var img=app.querySelector(".show-img"), box=c.parentNode;
+function fit(){ if(img.naturalWidth) box.style.aspectRatio=img.naturalWidth+" / "+img.naturalHeight }
+var reduce=false; try{ reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches }catch(_){}
+function start(){
+fit(); if(reduce || water.canvas!==c) return;
+var gl=null; try{ gl=c.getContext("webgl",{antialias:false,premultipliedAlpha:false,preserveDrawingBuffer:false}) }catch(_){}
+if(!gl) return;
+function sh(type,src){var o=gl.createShader(type);gl.shaderSource(o,src);gl.compileShader(o);if(!gl.getShaderParameter(o,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(o));return o}
+var pr;
+try{
+pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,VS));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,FS));gl.linkProgram(pr);
+if(!gl.getProgramParameter(pr,gl.LINK_STATUS)) throw new Error("link");
+gl.useProgram(pr);
+var b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+var loc=gl.getAttribLocation(pr,"a");gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+var tex=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,tex);
+gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,img);
+}catch(err){ return }
+var ut=gl.getUniformLocation(pr,"u_t");
+function size(){ var dpr=Math.min(window.devicePixelRatio||1,2); var w=Math.round(c.clientWidth*dpr), hh=Math.round(c.clientHeight*dpr); if(w>2400){hh=Math.round(hh*2400/w);w=2400} if(w&&hh&&(c.width!==w||c.height!==hh)){c.width=w;c.height=hh;gl.viewport(0,0,w,hh)} }
+size();
+if(window.ResizeObserver){ water.ro=new ResizeObserver(size); water.ro.observe(c) }
+if(window.IntersectionObserver){ water.io=new IntersectionObserver(function(es){ water.visible=es[0].isIntersecting }); water.io.observe(c) }
+var t0=performance.now(), shown=false;
+function frame(now){
+if(water.canvas!==c) return;
+water.raf=requestAnimationFrame(frame);
+if(!water.visible||document.hidden) return;
+gl.uniform1f(ut,(now-t0)/1000);
+gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
+if(!shown){ shown=true; c.classList.add("on") }
+}
+water.raf=requestAnimationFrame(frame);
+}
+if(img.complete&&img.naturalWidth) start(); else img.addEventListener("load",start,{once:true});
+}
+var RENDER={home:pHome,discover:pDiscover,heritage:pHeritage,sites:pSites,governance:pGovernance,visit:pVisit,gallery:pGallery,contact:pContact};
+function editUI(){
+if(!artifactNS || readOnly) return "";
+if(!editing) return '<button type="button" class="btn btn-primary fab" id="ed-start">Edit page</button>';
+return '<div class="editbar"><div class="wrap"><p class="msg">Editing. Tap any outlined text, photo or video to change it. Switch pages here, then save once.</p>'+
+'<label for="ed-page" class="sr" style="position:absolute;left:-9999px">Page</label><select id="ed-page" class="ed-pages">'+PAGES.concat([["visit","Plan Your Visit"]]).map(function(p){return '<option value="'+p[0]+'"'+(page===p[0]?" selected":"")+'>'+esc(navLabel(p[0]))+'</option>'}).join("")+'</select>'+
+'<button type="button" class="btn btn-ghost" id="ed-cancel">Cancel</button><button type="button" class="btn btn-primary" id="ed-save"'+(saving?" disabled":"")+'>'+(saving?"Saving…":"Save changes")+'</button></div></div>';
+}
+function render(){
+app.innerHTML = header()+'<main>'+RENDER[page]()+cta()+'</main>'+footer()+editUI();
+document.body.classList.toggle("editing", editing);
+if(editing){
+app.querySelectorAll("[data-path]").forEach(function(el){
+el.setAttribute("contenteditable","plaintext-only");
+if(el.contentEditable!=="plaintext-only") el.setAttribute("contenteditable","true");
+});
+}
+initWater();
+}
+function go(p){
+if(!RENDER[p]) p="home";
+if(editing) collect();
+page=p; render(); window.scrollTo(0,0);
+try{ if(location.hash!=="#"+p) history.replaceState(null,"","#"+p) }catch(_){}
+}
+function collect(){
+app.querySelectorAll("[data-path]").forEach(function(el){
+var v=el.innerText.replace(/\u00a0/g," ").replace(/\n{3,}/g,"\n\n").trim(), cur=get(el.dataset.path);
+if(v===String(cur==null?"":cur).trim()) return;
+set(el.dataset.path, v);
+});
+}
+function toast(msg){
+var old=document.querySelector(".toast"); if(old) old.remove();
+var d=document.createElement("div"); d.className="toast"; d.setAttribute("role","status"); d.textContent=msg;
+document.body.appendChild(d); setTimeout(function(){d.remove()},4200);
+}
+function buildDoc(){
+var data = JSON.stringify(state).replace(/</g,"\\u003c");
+return '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>'+RESET+'</style></head><body>'+
+"<title>"+esc(TITLE)+"</title>\n"+'<meta name="claude:viewport-fit-sides" content="cover">\n'+FONTS+"\n"+
+'<style id="site-css">'+CSS+"</style>\n\n"+'<div id="app"></div>\n\n'+
+'<script type="application/json" id="site-data">'+data+"<\/script>\n\n"+
+'
