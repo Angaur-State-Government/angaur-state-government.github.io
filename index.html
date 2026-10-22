@@ -628,6 +628,55 @@ main.pg-out{opacity:0;transform:translateY(-10px);filter:blur(3px);transition:op
 .card .ph img{transition:transform 1.4s cubic-bezier(.16,.84,.3,1)}
 .card:hover .ph img{transform:scale(1.05)}
 @media (prefers-reduced-motion:reduce){.btn:hover,.card:hover,.hamlet:hover{transform:none}main.pg-out{transition:none}}
+
+
+/* moving news bar */
+.tkr{position:relative;overflow:hidden;background:var(--hero-a);color:var(--hero-ink);border-block:1px solid rgba(247,243,236,.12);padding:.85rem 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.tkr-track{display:flex;width:max-content;animation:tkrMove var(--tkd,40s) linear infinite;will-change:transform}
+.tkr:hover .tkr-track{animation-play-state:paused}
+.tkr-half{display:flex;align-items:center;flex:none}
+.tkr-it{display:inline-flex;align-items:center;gap:.7rem;padding:0 2.2rem;font:500 .95rem/1.2 var(--body);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.tkr-im{width:34px;height:22px;border-radius:4px;overflow:hidden;flex:none;box-shadow:0 2px 8px rgba(0,0,0,.3);background:rgba(255,255,255,.08)}
+.tkr-im img,.tkr-im video{width:100%;height:100%;object-fit:cover;display:block}
+.tkr-dot{width:7px;height:7px;border-radius:50%;background:var(--hero-acc);flex:none;box-shadow:0 0 0 4px rgba(247,181,122,.18)}
+@keyframes tkrMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tkr-track,.strip-track{animation-duration:400s}}
+.tkr-edit{background:var(--band);padding:1.2rem 0;border-block:1px dashed var(--line)}
+.tkr-tools,.bk-tools{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-bottom:.8rem;font:500 .85rem var(--body);color:var(--ink)}
+.tkr-tools strong,.bk-tools strong{margin-right:.4rem}
+.tkr-sp{display:inline-flex;gap:.35rem;align-items:center;margin-left:.5rem}
+.mini.on{background:var(--lagoon);color:#fff;border-color:var(--lagoon)}
+.tkr-list{display:grid;gap:.5rem;margin-bottom:.6rem}
+.tkr-row{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.55rem .8rem}
+.tkr-row .tkr-im{width:44px;height:28px}
+.tkr-row .tkr-im i{display:block;width:100%;height:100%;background:repeating-linear-gradient(45deg,var(--band),var(--band) 4px,var(--line) 4px,var(--line) 8px)}
+.tkr-tx{flex:1 1 220px;min-width:0}
+/* sliding photo bar */
+.strip{overflow:hidden}
+.strip-view{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.strip-track{display:flex;width:max-content;animation:tkrMove var(--std,60s) linear infinite;will-change:transform}
+.strip-view:hover .strip-track{animation-play-state:paused}
+.strip-half{display:flex;gap:clamp(12px,1.6vw,22px);padding-right:clamp(12px,1.6vw,22px);flex:none}
+.strip-it{position:relative;margin:0;width:clamp(240px,28vw,400px);aspect-ratio:4/3;border-radius:16px;overflow:hidden;flex:none;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.strip-it img,.strip-it video{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.16,.84,.3,1)}
+.strip-it:hover img,.strip-it:hover video{transform:scale(1.05)}
+.strip-it figcaption{position:absolute;left:0;right:0;bottom:0;padding:2rem 1rem .8rem;color:#fff;font:500 .9rem var(--body);background:linear-gradient(180deg,rgba(6,16,28,0),rgba(6,16,28,.65))}
+.strip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-bottom:.8rem}
+.strip-card{position:relative;margin:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.strip-card img,.strip-card video,.strip-ph{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.strip-ph{display:grid;place-items:center;color:var(--muted);font-size:.85rem;background:var(--band)}
+.strip-card figcaption{padding:.6rem .8rem}
+.strip-card .rm{margin:0 .8rem .8rem;align-self:flex-start}
+/* booking bar: placement and picture */
+.enquire.bk-pic{background-image:linear-gradient(rgba(8,20,34,.62),rgba(8,20,34,.62)),var(--bkbg);background-size:cover;background-position:center}
+.hero-show .bk-below .enquire{margin-top:clamp(18px,2.4vw,30px)}
+.hero-show .bk-above{margin-bottom:clamp(18px,2.4vw,30px)}
+.hero-show .bk-above .enquire{margin-top:0}
+.bk-tools{max-width:1240px;margin:1rem auto .6rem;padding:.6rem .9rem;background:var(--surface);border:1px dashed var(--line);border-radius:12px;width:calc(100% - 32px)}
+
+.editing .bk .bk-ph[data-path]{outline:1px dashed rgba(247,181,122,.75);outline-offset:3px;border-radius:4px;color:inherit}
+.strip-it.is-flag{background:radial-gradient(120% 90% at 50% 40%,#16314a,#0a1826)}.strip-it.is-flag img{object-fit:contain;padding:12% 10%;box-sizing:border-box}.strip-it.is-flag:hover img{transform:scale(1.03)}
+.tkr-im img,.tkr-im video{object-fit:contain}.tkr .tkr-im{width:35px;height:22px;background:transparent}
 </style>
 
 <div id="app"></div>
@@ -650,7 +699,10 @@ var TEMPLATES = {
   "visit.items": {title:"New topic", points:"First point\nSecond point"},
   "gallery.items": {caption:"Photo caption", img:null},
   "contact.details": {label:"Label", value:"Value"},
-  "news.schedule": {day:"Day", what:"Activity"}
+  "news.schedule": {day:"Day", what:"Activity"},
+  "ticker.items": {text:"New message", img:null},
+  "strip.items": {cap:"Photo caption", img:null},
+  "map.pins": {name:"New place", text:"Drag the pin to the exact spot", lat:6.9035, lng:134.1370}
 };
 var state = JSON.parse(document.getElementById("site-data").textContent);
 var CSS = document.getElementById("site-css").textContent;
@@ -804,6 +856,148 @@ function footer(){
   '<div class="legal">'+t("site.copyright")+t("labels.country")+'</div></div></footer>';
 }
 
+
+/* ---------- moving bars: news ticker, photo strip, booking-bar placement ---------- */
+function ensureBars(){
+  var I=state.img||{};
+  if(!state.ticker) state.ticker={on:true,speed:"normal",items:[
+    {text:"Alii! Welcome to Angaur State, Republic of Palau",img:I.flag||null},
+    {text:"Mesulang for visiting. We wish you a pleasant stay in Angaur. Governor Kennosuke A. Suzuky",img:null},
+    {text:"Visitor permits: send your request online in minutes",img:null},
+    {text:"Stay informed: follow us on Facebook for the latest updates from Angaur State",img:null}]};
+  if(!state.strip) state.strip={on:true,eyebrow:"Angaur in pictures",title:"Moments from our island",items:[
+    {cap:"Sunset over the Angaur coast",img:I.hero||null},
+    {cap:"Angaur from the air",img:I.cta||null},
+    {cap:"The flag of Angaur State",img:I.flag||null}]};
+  state.layout=state.layout||{};
+  if(!state.layout.bookPos) state.layout.bookPos="over";
+}
+var TK_SPEED={slow:1.6,normal:1,fast:.6};
+function tickerBar(){
+  ensureBars(); var T=state.ticker, items=T.items||[];
+  if(editing){
+    return '<section class="tkr-edit" id="home-ticker"><div class="wrap"><div class="tkr-tools"><strong>Moving news bar</strong>'+
+      '<button type="button" class="mini" data-toggle="ticker.on">'+(T.on!==false?"Shown":"Hidden")+'</button>'+
+      '<span class="tkr-sp">Speed:'+["slow","normal","fast"].map(function(k){return '<button type="button" class="mini'+(T.speed===k?" on":"")+'" data-tkspeed="'+k+'">'+k.charAt(0).toUpperCase()+k.slice(1)+'</button>'}).join("")+'</span></div>'+
+      '<div class="tkr-list">'+items.map(function(it,i){var p="ticker.items."+i;return '<div class="tkr-row"><span class="tkr-im">'+(it.img?media(it.img,""):'<i></i>')+'</span>'+t(p+".text","span","tkr-tx")+
+        '<span class="ph-btns" style="position:static"><button type="button" data-change="'+p+'.img">'+(it.img?"Change picture":"Add picture")+'</button>'+(it.img?'<button type="button" data-clear="'+p+'.img">Remove picture</button>':"")+'</span>'+rm(p)+'</div>'}).join("")+'</div>'+
+      add("ticker.items","Add message")+'</div></section>';
+  }
+  if(T.on===false||!items.length) return "";
+  var one=items.map(function(it){return '<span class="tkr-it">'+(it.img?'<span class="tkr-im">'+media(it.img,"")+'</span>':'<span class="tkr-dot" aria-hidden="true"></span>')+'<span>'+esc(it.text)+'</span></span>'}).join("");
+  var reps=Math.max(2,Math.ceil(6/items.length)), half="";
+  for(var r=0;r<reps;r++) half+=one;
+  var dur=Math.round(items.length*reps*7*(TK_SPEED[T.speed]||1));
+  return '<section class="tkr" id="home-ticker" aria-label="Announcements"><div class="tkr-track" style="--tkd:'+dur+'s"><div class="tkr-half">'+half+'</div><div class="tkr-half" aria-hidden="true">'+half+'</div></div></section>';
+}
+function photoStrip(){
+  ensureBars(); var S=state.strip, items=S.items||[];
+  var head='<div class="wrap"><div class="sec-head">'+t("strip.eyebrow","p","eyebrow")+t("strip.title","h2")+'</div></div>';
+  if(editing){
+    return '<section class="band strip-edit" id="home-strip">'+head+'<div class="wrap"><div class="tkr-tools"><strong>Sliding photo bar</strong><button type="button" class="mini" data-toggle="strip.on">'+(S.on!==false?"Shown":"Hidden")+'</button></div>'+
+      '<div class="strip-grid">'+items.map(function(it,i){var p="strip.items."+i;return '<figure class="strip-card">'+(it.img?media(it.img,it.cap):'<div class="strip-ph">No picture yet</div>')+
+        '<span class="ph-btns"><button type="button" data-change="'+p+'.img">'+(it.img?"Change photo":"Add photo")+'</button>'+(it.img?'<button type="button" data-clear="'+p+'.img">Remove</button>':"")+'</span>'+
+        '<figcaption>'+t(p+".cap")+'</figcaption>'+rm(p)+'</figure>'}).join("")+'</div>'+add("strip.items","Add photo")+'</div></section>';
+  }
+  var shown=items.filter(function(it){return it.img});
+  if(S.on===false||!shown.length) return "";
+  var one=shown.map(function(it){return '<figure class="strip-it'+(it.img===state.img.flag?" is-flag":"")+'">'+media(it.img,it.cap)+(it.cap?'<figcaption>'+esc(it.cap)+'</figcaption>':"")+'</figure>'}).join("");
+  var reps=Math.max(2,Math.ceil(8/shown.length)), half="";
+  for(var r=0;r<reps;r++) half+=one;
+  return '<section class="band strip" id="home-strip">'+head+'<div class="strip-view"><div class="strip-track" style="--std:'+(shown.length*reps*9)+'s"><div class="strip-half">'+half+'</div><div class="strip-half" aria-hidden="true">'+half+'</div></div></div></section>';
+}
+function bookTools(){
+  if(!editing) return "";
+  ensureBars(); var pos=state.layout.bookPos, bg=state.img.bookBg;
+  return '<div class="bk-tools"><strong>Booking bar</strong><span>Position:</span>'+
+    [["above","Above photo"],["over","On the photo"],["below","Below photo"]].map(function(o){return '<button type="button" class="mini'+(pos===o[0]?" on":"")+'" data-bkpos="'+o[0]+'">'+o[1]+'</button>'}).join("")+
+    '<span>Background:</span><button type="button" class="mini" data-change="img.bookBg">'+(bg?"Change picture":"Add picture")+'</button>'+(bg?'<button type="button" class="mini" data-clear="img.bookBg">Remove picture</button>':"")+'</div>';
+}
+
+
+/* ---------- map of Angaur (Leaflet, editable pins) ---------- */
+function ensureMap(){
+  if(!state.map) state.map={on:true,mode:"live",view:"satellite",eyebrow:"FIND YOUR WAY",title:"Map of Angaur",
+    text:"Explore the island: tap a place to fly to it, or switch between satellite and street view.",
+    pins:[{name:"Ngeremasch · State Capital",text:"Seat of the Angaur State Government",lat:6.9014,lng:134.1294},
+      {name:"Angaur Harbor",text:"Natural harbor on the west coast",lat:6.9052,lng:134.1283},
+      {name:"Angaur Airstrip",text:"Flights from Airai Airport",lat:6.9064,lng:134.1450}]};
+  var M=state.map; M.pins=M.pins||[];
+  return M;
+}
+var MAPI=null, MAPMK=[], LFL=null;
+function loadLeaflet(cb){
+  if(window.L&&window.L.map) return cb();
+  if(LFL){LFL.push(cb);return} LFL=[cb];
+  var sc=document.createElement("script"); sc.src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"; sc.async=true;
+  sc.onload=function(){var q=LFL;LFL=null;q.forEach(function(f){try{f()}catch(e){}})};
+  sc.onerror=function(){LFL=null;var b=app.querySelector(".map-box");if(b)b.classList.add("no-tiles")};
+  document.head.appendChild(sc);
+}
+function mapSection(){
+  var M=ensureMap(), pins=M.pins, pic=state.img.map, usePic=M.mode==="picture"&&pic;
+  if(!editing&&M.on===false) return "";
+  var head='<div class="sec-head">'+t("map.eyebrow","p","eyebrow")+t("map.title","h2")+t("map.text","p","lead")+'</div>';
+  var gm="https://www.google.com/maps/@6.9035,134.137,15z";
+  var box='<div class="map-box">'+(usePic?media(pic,"Map of Angaur","map-pic"):
+      '<div class="map-el" role="region" aria-label="Interactive map of Angaur"></div>'+
+      '<div class="map-views"><button type="button" class="'+(M.view!=="street"?"on":"")+'" data-mapview="satellite">Satellite</button><button type="button" class="'+(M.view==="street"?"on":"")+'" data-mapview="street">Street</button></div>'+
+      '<div class="map-fall"><p>The live map can’t load in this view.<br><a href="'+gm+'" target="_blank" rel="noopener">Open Angaur in Google Maps</a></p></div>'+
+      '<a class="map-open" href="'+gm+'" target="_blank" rel="noopener">Open in Google Maps ↗</a>')+'</div>';
+  var list;
+  if(editing){
+    list='<ol class="map-list map-ed-list">'+pins.map(function(p,i){var b="map.pins."+i;return '<li data-pin="'+i+'"><span class="mn">'+(i+1)+'</span><div>'+t(b+".name","strong")+t(b+".text","small")+'</div>'+rm(b)+'</li>'}).join("")+'</ol>'+add("map.pins","Add place");
+  } else {
+    list='<ol class="map-list">'+pins.map(function(p,i){return '<li data-pin="'+i+'" tabindex="0"><span class="mn">'+(i+1)+'</span><div><strong>'+esc(p.name)+'</strong>'+(p.text?'<small>'+esc(p.text)+'</small>':"")+'</div></li>'}).join("")+'</ol>';
+  }
+  var tools=editing?'<div class="map-tools"><strong>Island map</strong><button type="button" class="mini" data-toggle="map.on">'+(M.on!==false?"Shown":"Hidden")+'</button>'+
+      '<span>Show:</span><button type="button" class="mini'+(!usePic?" on":"")+'" data-mapmode="live">Live map</button><button type="button" class="mini'+(usePic?" on":"")+'" data-mapmode="picture">My map picture</button>'+
+      '<button type="button" class="mini" data-change="img.map">'+(pic?"Change map picture":"Upload map picture")+'</button>'+(pic?'<button type="button" class="mini" data-clear="img.map">Remove picture</button>':"")+'</div>':"";
+  var hint=editing&&!usePic?'<p class="map-hint">Drag any numbered pin on the map to move it to the exact spot. Names and descriptions are editable in the list.</p>':"";
+  return '<section class="band map-sec" id="home-map"><div class="wrap">'+head+tools+'<div class="map-shell">'+box+'<div>'+list+'</div></div>'+hint+'</div></section>';
+}
+function initMap(){
+  if(MAPI){try{MAPI.remove()}catch(e){} MAPI=null; MAPMK=[]}
+  var el=app.querySelector(".map-el"); if(!el) return;
+  loadLeaflet(function(){
+    if(!el.isConnected||!window.L) return;
+    var M=ensureMap(), L=window.L;
+    var map=L.map(el,{zoomControl:true,scrollWheelZoom:false,attributionControl:true,zoomSnap:.25,minZoom:12,maxZoom:18,
+      maxBounds:[[6.80,134.03],[7.01,134.25]]}).setView([6.9035,134.137],14.5);
+    MAPI=map;
+    var layers={
+      satellite:L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:18,attribution:"Imagery &copy; Esri, Maxar, Earthstar Geographics"}),
+      street:L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,subdomains:"abc",attribution:"&copy; OpenStreetMap contributors"})};
+    var ok=0, bad=0, box=el.closest(".map-box");
+    Object.keys(layers).forEach(function(k){layers[k].on("tileload",function(){ok++;box.classList.remove("no-tiles")}).on("tileerror",function(){bad++;if(!ok&&bad>5)box.classList.add("no-tiles")})});
+    var cur=M.view==="street"?"street":"satellite"; layers[cur].addTo(map);
+    map.on("click",function(){map.scrollWheelZoom.enable()}); map.on("mouseout",function(){map.scrollWheelZoom.disable()});
+    function pick(i){
+      MAPMK.forEach(function(m,j){var e=m.getElement();if(e)e.classList.toggle("on",j===i)});
+      app.querySelectorAll(".map-list li").forEach(function(li){li.classList.toggle("on",+li.dataset.pin===i)});
+    }
+    M.pins.forEach(function(p,i){
+      if(typeof p.lat!=="number"||typeof p.lng!=="number") return;
+      var mk=L.marker([p.lat,p.lng],{draggable:editing,keyboard:true,title:p.name,
+        icon:L.divIcon({className:"ang-pin",html:"<span></span><b>"+(i+1)+"</b>",iconSize:[30,30],iconAnchor:[15,36]})}).addTo(map);
+      mk.bindTooltip('<span class="ang-tip">'+esc(p.name)+'</span>',{direction:"top",offset:[0,-32]});
+      mk.on("click",function(){pick(i)});
+      if(editing) mk.on("dragend",function(){var ll=mk.getLatLng(); var P=state.map.pins[i]; if(P){P.lat=+ll.lat.toFixed(5);P.lng=+ll.lng.toFixed(5)} toast("Pin moved. Press Save changes to keep it.")});
+      MAPMK[i]=mk;
+    });
+    app.querySelectorAll(".map-list li").forEach(function(li){
+      function go(){var i=+li.dataset.pin, mk=MAPMK[i]; if(!mk) return; pick(i);
+        map.flyTo(mk.getLatLng(),16.5,{duration:1.6,easeLinearity:.2}); mk.openTooltip()}
+      li.addEventListener("click",function(e){if(editing&&e.target.closest("[data-path],button"))return; go()});
+      li.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();go()}});
+    });
+    var vb=el.parentNode.querySelectorAll("[data-mapview]");
+    vb.forEach(function(b){b.addEventListener("click",function(e){e.stopPropagation();var k=b.dataset.mapview; if(k===cur) return;
+      map.removeLayer(layers[cur]); cur=k; layers[cur].addTo(map); vb.forEach(function(x){x.classList.toggle("on",x===b)}); if(editing) state.map.view=k })});
+    setTimeout(function(){map.invalidateSize()},250);
+  });
+}
+
 /* ---------- pages ---------- */
 function pHome(){
   var url=state.img.hero, s="";
@@ -815,20 +1009,24 @@ function pHome(){
   if(url){
     s+='<section class="hero hero-show" id="home-hero"><div class="wrap hero-top"><div class="hero-copy">'+t("home.eyebrow","p","eyebrow")+t("home.title","h1")+'</div>'+
     '<div class="hero-side">'+t("home.text","p","lead pre")+acts+'</div></div>'+
+    (function(){ensureBars();return state.layout.bookPos==="above"?'<div class="wrap bk-above" style="padding-left:0;padding-right:0">'+bookTools()+enq+'</div>':""})()+
     '<div class="show-wrap"><figure class="showcase" style="margin:0 auto">'+media(url,"Sunset over the tropical coastline of Angaur","show-img")+
     (waterOn?'<canvas class="water" aria-hidden="true"></canvas>':'')+
     '<figcaption class="show-cap">'+t("labels.capLeft")+t("labels.capRight")+'</figcaption>'+photoBtns+'</figure></div>'+
-    '<div class="wrap" style="padding-left:0;padding-right:0">'+enq+'</div></section>';
+    (state.layout.bookPos==="above"?"":'<div class="wrap'+(state.layout.bookPos==="below"?" bk-below":"")+'" style="padding-left:0;padding-right:0">'+bookTools()+enq+'</div>')+'</section>';
   } else {
     s+='<section class="hero" id="home-hero">'+heroScene()+'<div class="wrap"><div class="hero-copy">'+t("home.eyebrow","p","eyebrow")+t("home.title","h1")+t("home.text","p","lead pre")+
     '<div class="hero-actions">'+link("discover",t("home.cta"),"btn btn-primary")+link("visit",t("home.cta2"),"btn btn-ghost")+'<span class="ph-btns" style="position:static"><button type="button" data-change="img.hero">Add photo</button></span></div></div>'+enq+'</div></section>';
   }
+  s+=tickerBar();
   s+=newsHome();
   s+=discoverIntro(true);
   s+='<section class="band" id="home-sites"><div class="wrap"><div class="sec-head">'+t("sites.eyebrow","p","eyebrow")+t("sites.homeTitle","h2")+'</div>'+siteStats()+
      '<p class="note">'+t("sites.emptyText")+'</p>'+link("sites",t("sites.cta"),"btn btn-ghost")+'</div></section>';
   s+=legendSection(false);
   s+=flagSection(false);
+  s+=photoStrip();
+  s+=mapSection();
   s+='<section id="home-places"><div class="wrap"><div class="sec-head">'+t("labels.placesEyebrow","p","eyebrow")+t("labels.placesTitle","h2")+'</div><div class="cards">';
   for(var i=0;i<Math.min(4,state.pois.length);i++) s+=poiCard(i);
   s+='</div><div class="more">'+link("discover",t("labels.placesMore"),"btn btn-ghost")+'</div></div></section>';
@@ -1015,6 +1213,14 @@ var FS=[
 "  return m;",
 "}",
 "vec3 tex(vec2 p){ return texture2D(u_img, clamp(p, vec2(.001), vec2(.999))).rgb; }",
+"/* foliage: warm-lit greens of the palms and jungle (not rock, sand, sky or sea) */",
+"float leaf(vec3 c, vec2 uv){",
+"  float l = dot(c, vec3(.299, .587, .114));",
+"  float k = smoothstep(.035, .10, c.g - c.b) * smoothstep(1.42, 1.12, c.r / max(c.g, .01));",
+"  k *= 1. - smoothstep(.50, .62, l);",
+"  k *= (1. - smoothstep(.40, .45, uv.x)) * smoothstep(.10, .14, uv.y);",
+"  return k;",
+"}",
 "",
 "/* sum of directional ocean waves in perspective world space; returns slope */",
 "vec2 wave(vec2 D, float F, float S, float A, float ph, vec2 P, float t){",
@@ -1086,6 +1292,18 @@ var FS=[
 "  boat(s, ring, uv, vec2(.2259, .7441), vec2(.026, .015), .0015, .015, 1.35, 4.0, t);",
 "  boat(s, ring, uv, vec2(.3626, .7744), vec2(.032, .021), .0019, .018, 1.05, 1.2, t);",
 "  boat(s, ring, uv, vec2(.3010, .8301), vec2(.043, .027), .0007, .006, .90, 3.3, t);",
+"",
+"  /* palms and jungle swaying together in one sea breeze; gusts roll across the cliff */",
+"  float fm = leaf(tex(uv), uv);",
+"  if (fm > .01){",
+"    float near = 1. - smoothstep(.15, .27, uv.x);",
+"    float amp = mix(.22, 1., near) * (.55 + .45 * smoothstep(.75, .35, uv.y));",
+"    float gust = .55 + .45 * sin(t * .38 - uv.x * 5. + uv.y * 1.4);",
+"    float sway = sin(t * 1.05 + uv.y * 8. + uv.x * 3.) * .7 + sin(t * 2.1 + uv.y * 21. - uv.x * 9.) * .3;",
+"    float flick = n2(uv * vec2(170., 130.) + vec2(t * 1.6, t * .8)) - .5;",
+"    vec2 fd = vec2(sway * gust * .0027 + flick * .0008, (sway * .3 + flick) * .0007) * amp;",
+"    s = mix(s, uv + fd, fm * leaf(tex(uv + fd), uv));",
+"  }",
 "",
 "  vec3 c = tex(s);",
 "",
@@ -1316,23 +1534,35 @@ function bkFmt(s,long){ var d=bkD(s); if(!d) return ""; return d.toLocaleDateStr
 function bkNights(){ if(!BK.inD||!BK.outD) return 0; return Math.round((bkD(BK.outD)-bkD(BK.inD))/864e5) }
 function L(k,d){ var v=state.labels&&state.labels[k]; return v||d }
 function bookingBar(){
-  var nm=BK.name?esc(BK.name):'<span class="bk-ph">'+esc(L("enqAddName","Add visitor name"))+'</span>';
-  var pick='<span class="bk-ph">'+esc(L("enqPick","Select date"))+'</span>';
-  return '<div class="enquire bk" aria-label="Visit enquiry">'+
+  state.labels=state.labels||{};
+  if(!state.labels.enqPick) state.labels.enqPick="Select date";
+  if(!state.labels.enqAddName) state.labels.enqAddName="Add visitor name";
+  if(!state.labels.enqGuestOne) state.labels.enqGuestOne="guest";
+  if(!state.labels.enqGuestMany) state.labels.enqGuestMany="guests";
+  var ed=editing;
+  var nm=(BK.name&&!ed)?esc(BK.name):(ed?t("labels.enqAddName","span","bk-ph"):'<span class="bk-ph">'+esc(L("enqAddName","Add visitor name"))+'</span>');
+  var pick=ed?t("labels.enqPick","span","bk-ph"):'<span class="bk-ph">'+esc(L("enqPick","Select date"))+'</span>';
+  var gw=ed?t("labels.enqGuestMany"):esc(BK.guests===1?L("enqGuestOne","guest"):L("enqGuestMany","guests"));
+  var go=ed?t("labels.enquire"):esc(get("labels.enquire"));
+  var bgu=state.img&&state.img.bookBg&&!isVid(state.img.bookBg)?state.img.bookBg:null;
+  var h='<div class="enquire bk'+(bgu?" bk-pic":"")+'" aria-label="Visit enquiry"'+(bgu?' style="--bkbg:url(&quot;'+esc(bgu)+'&quot;)"':"")+'>'+
   '<label>'+t("labels.enqDest","span")+t("labels.enqDestVal","span","enq-v")+'</label>'+
-  '<div class="bk-f">'+t("labels.enqIn","span","bk-l")+'<button type="button" class="enq-v bk-btn" data-bk="cal-in" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span class="bk-val" id="bk-in">'+(BK.inD?esc(bkFmt(BK.inD)):pick)+'</span></button></div>'+
-  '<div class="bk-f">'+t("labels.enqOut","span","bk-l")+'<button type="button" class="enq-v bk-btn" data-bk="cal-out" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span class="bk-val" id="bk-out">'+(BK.outD?esc(bkFmt(BK.outD)):pick)+'</span></button></div>'+
-  '<div class="bk-f">'+t("labels.enqGuests","span","bk-l")+'<div class="enq-v bk-step"><button type="button" data-bk="g-" aria-label="Fewer guests">&minus;</button><span id="bk-g">'+BK.guests+' '+(BK.guests===1?"guest":"guests")+'</span><button type="button" data-bk="g+" aria-label="More guests">+</button></div></div>'+
+  '<div class="bk-f">'+t("labels.enqIn","span","bk-l")+'<button type="button" class="enq-v bk-btn" data-bk="cal-in" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span class="bk-val" id="bk-in">'+((BK.inD&&!ed)?esc(bkFmt(BK.inD)):pick)+'</span></button></div>'+
+  '<div class="bk-f">'+t("labels.enqOut","span","bk-l")+'<button type="button" class="enq-v bk-btn" data-bk="cal-out" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span class="bk-val" id="bk-out">'+((BK.outD&&!ed)?esc(bkFmt(BK.outD)):pick)+'</span></button></div>'+
+  '<div class="bk-f">'+t("labels.enqGuests","span","bk-l")+'<div class="enq-v bk-step"><button type="button" data-bk="g-" aria-label="Fewer guests">&minus;</button><span id="bk-g">'+BK.guests+' '+gw+'</span><button type="button" data-bk="g+" aria-label="More guests">+</button></div></div>'+
   '<div class="bk-f">'+t("labels.enqPermit","span","bk-l")+'<button type="button" class="enq-v bk-btn" data-bk="permit" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.2-3.8 4-5.6 7.5-5.6s6.3 1.8 7.5 5.6"/></svg><span class="bk-val" id="bk-name">'+nm+'</span></button></div>'+
-  '<button type="button" class="btn btn-primary bk-go" data-bk="go">'+esc(get("labels.enquire"))+'</button>'+
+  '<button type="button" class="btn btn-primary bk-go" data-bk="go">'+go+'</button>'+
   '<p class="enquire-msg">'+t("home.enquiryNote")+(BK.sent?' <button type="button" class="bk-mine" data-bk="mine">View my permit card ('+esc(BK.sent.ref)+')</button>':'')+'</p>'+
   '<div class="bk-pop" id="bk-pop" role="dialog" aria-modal="false" hidden></div></div>';
+  /* in the editor the fields become plain boxes so their wording can be typed into */
+  if(ed) h=h.replace(/<button type="button" class="enq-v bk-btn"[^>]*>/g,'<div class="enq-v bk-btn">').replace('<button type="button" class="btn btn-primary bk-go" data-bk="go">','<div class="btn btn-primary bk-go">').split('</span></button>').join('</span></div>');
+  return h;
 }
 function bkBar(){
   var pick='<span class="bk-ph">'+esc(L("enqPick","Select date"))+'</span>', e;
   if(e=document.getElementById("bk-in")) e.innerHTML=BK.inD?esc(bkFmt(BK.inD)):pick;
   if(e=document.getElementById("bk-out")) e.innerHTML=BK.outD?esc(bkFmt(BK.outD)):pick;
-  if(e=document.getElementById("bk-g")) e.textContent=BK.guests+" "+(BK.guests===1?"guest":"guests");
+  if(e=document.getElementById("bk-g")) e.textContent=BK.guests+" "+(BK.guests===1?L("enqGuestOne","guest"):L("enqGuestMany","guests"));
   if(e=document.getElementById("bk-name")) e.innerHTML=BK.name?esc(BK.name):'<span class="bk-ph">'+esc(L("enqAddName","Add visitor name"))+'</span>';
   bkSave();
 }
@@ -1491,6 +1721,7 @@ function bkCopy(txt,cb){
 }
 function bkClick(e){
   var el=e.target, b=el.closest&&el.closest("[data-bk]");
+  if(editing&&b&&b.closest(".bk")&&b.dataset.bk!=="g-"&&b.dataset.bk!=="g+") return true;
   var pop=document.getElementById("bk-pop");
   if(!b){
     if(BK.open&&pop&&!el.closest(".bk-pop")) bkClose();
@@ -1689,6 +1920,9 @@ function editUI(){
   '<button type="button" class="btn btn-ghost" id="ed-design" aria-pressed="'+(!!(EDP&&EDP.mode==="design"))+'">Design</button><button type="button" class="btn btn-ghost" id="ed-cancel">Cancel</button><button type="button" class="btn btn-primary" id="ed-save"'+(saving?" disabled":"")+'>'+(saving?"Saving…":"Save changes")+'</button></div></div>';
 }
 
+/* ---------- sound of the sea: waves rolling onto the beach (synthesised live, no audio file) ---------- */
+
+
 function render(){
   hideTx();
   var entering=page!==lastPage;
@@ -1706,6 +1940,7 @@ function render(){
   wlBooted=true;
   var wlEl=document.getElementById("welcome");
   if(wlEl&&!wlEl.classList.contains("out")) wlGL=true; else { initWater(); initFlags(); initSeas(); }
+  initMap();
   initReveal();
   initFlagFx();
   if(page==="home"&&!editing&&entering&&!wlEl) heroIn();
@@ -1801,6 +2036,10 @@ document.addEventListener("click", function(e){
   if(b.id==="ed-cancel"){ closeEdp(); state=JSON.parse(snapshot); editing=false; render(); return }
   if(b.id==="ed-save"){ closeEdp(); save(); return }
   if(b.id==="ed-design"){ collect(); if(EDP&&EDP.mode==="design") closeEdp(); else { EDP={mode:"design"}; drawEdp() } var db=document.getElementById("ed-design"); if(db) db.setAttribute("aria-pressed",String(!!EDP)); return }
+  if(b.dataset.bkpos){ collect(); ensureBars(); state.layout.bookPos=b.dataset.bkpos; render(); return }
+  if(b.dataset.mapmode){ collect(); ensureMap().mode=b.dataset.mapmode; if(b.dataset.mapmode==="picture"&&!state.img.map) toast("Upload a map picture to show it here."); render(); return }
+  if(b.dataset.mapview) return;
+  if(b.dataset.tkspeed){ collect(); ensureBars(); state.ticker.speed=b.dataset.tkspeed; render(); return }
   if(b.dataset.add==="news.items"){ collect(); NW().items.push({date:bkS(new Date()),cat:"News",title:"New post",when:"",text:"Write the details here.",img:null}); render(); toast("New post added first in the list. Change it, then press Save changes."); return }
   if(b.dataset.add){ collect(); get(b.dataset.add).push(JSON.parse(JSON.stringify(TEMPLATES[b.dataset.add]))); render(); return }
   if(b.dataset.remove){ collect(); var p=b.dataset.remove.split("."), idx=+p.pop(); get(p.join(".")).splice(idx,1); render(); return }
